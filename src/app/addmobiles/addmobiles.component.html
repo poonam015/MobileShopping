@@ -1,0 +1,40 @@
+<app-navbar></app-navbar>
+
+<h1>Add New Mobile</h1>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+
+            <div class="form-group">
+                <label for="" class="form-label">Enter SNo</label>
+                <input type="text" class="form-control" [(ngModel)]="mobileid">
+            </div>
+
+            <div class="form-group">
+                <label for="" class="form-label">Enter Mobile Model</label>
+                <input type="text" class="form-control" [(ngModel)]="mobilename">
+            </div>
+
+            <div class="form-group">
+                <label for="" class="form-label">Enter Mobile Company</label>
+                <input type="text" class="form-control" [(ngModel)]="mobilecompany">
+            </div>
+
+            <div class="form-group">
+                <label for="" class="form-label">Enter Mobile Price</label>
+                <input type="text" class="form-control" [(ngModel)]="mobileprice">
+            </div>
+
+            <div class="form-group">
+                <button class="btn btn-success" (click)="addmobile()">Add Mobile</button>
+                <button class="btn btn-danger">Cancel</button>
+            </div>
+        </div>
+        <div class="col-md-8">
+
+        </div>
+    </div>
+</div>
+

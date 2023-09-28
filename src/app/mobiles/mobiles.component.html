@@ -1,0 +1,18 @@
+<app-navbar></app-navbar>
+
+<h1>Avilable Mobiles</h1>
+
+<table class="table table-bordered table-hover">
+    <tr>
+        <td>SNo.</td>
+        <td>Mobile Model</td>
+        <td>Mobile Company</td>
+        <td>Price</td>
+    </tr>
+    <tr *ngFor="let mobile of mobilelist">
+        <td>{{mobile.mobileId}}</td>
+        <td>{{mobile.mobileName}}</td>
+        <td>{{mobile.mobileCompany}}</td>
+        <td>{{mobile.mobilePrice}}</td>
+    </tr>
+</table>
